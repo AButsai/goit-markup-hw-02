@@ -1,28 +1,158 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
 
 :root {
+  --font-family-global: 'Roboto', sans-serif;
+  --font-family: 'Raleway', sans-serif;
   --bg-color: #e5e5e5;
+  --bg-color-section: #f5f4fa;
   --color: #212121;
+  --color-title: #ffffff;
+  --color-text: #757575;
   --color-hover-focus: #2196f3;
+  --color-footer-link: rgba(255, 255, 255, 0.6);
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-family-global);
   color: var(--color);
   background-color: var(--bg-color);
 }
 
-.header-link {
-}
-
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--font-family);
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  color: var(--color);
 }
 
 .logo > span {
   color: var(--color-hover-focus);
+}
+
+.list {
+  list-style: none;
+}
+
+.header-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  color: var(--color);
+}
+
+.active {
+  color: var(--color-hover-focus);
+}
+
+.link {
+  color: var(--color-text);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--color-hover-focus);
+}
+
+.hero-section-title {
+  color: var(--color-title);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  font-family: var(--font-family-global);
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-title);
+  background-color: var(--color-hover-focus);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  cursor: pointer;
+}
+
+.peculiarities-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.peculiarities-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.address-link {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--color-footer-link);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--color-hover-focus);
+}
+/* Portfolio */
+.portfolio-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  background: var(--bg-color-section);
+  cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--color-title);
+  background: var(--color-hover-focus);
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--color-text);
 }
