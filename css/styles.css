@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
-
 :root {
   --font-family-global: 'Roboto', sans-serif;
   --font-family: 'Raleway', sans-serif;
-  --bg-color: #e5e5e5;
+  --bg-color: #ffffff;
+  --bg-color-hero-footer: #2f303a;
   --bg-color-section: #f5f4fa;
   --color: #212121;
   --color-title: #ffffff;
@@ -16,6 +15,8 @@ body {
   font-family: var(--font-family-global);
   color: var(--color);
   background-color: var(--bg-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .logo {
@@ -56,6 +57,11 @@ body {
   color: var(--color-hover-focus);
 }
 
+.hero-section {
+  text-align: center;
+  background-color: var(--bg-color-hero-footer);
+}
+
 .hero-section-title {
   color: var(--color-title);
   font-weight: 900;
@@ -87,16 +93,12 @@ body {
 
 .peculiarities-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .peculiarities-text {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--color-text);
 }
 
@@ -104,34 +106,44 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
+}
+
+.team {
+  background-color: var(--bg-color-section);
 }
 
 .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
 }
 
 .team-text {
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
+}
+
+.footer {
+  background-color: var(--bg-color-hero-footer);
+  color: var(--bg-color);
+}
+
+.footer-logo {
+  color: var(--bg-color);
 }
 
 .address-link {
   text-decoration: none;
   cursor: pointer;
-  font-size: 14px;
   line-height: 1.71;
   color: var(--color-footer-link);
 }
 
 .address-link:hover,
 .address-link:focus {
-  color: var(--color-hover-focus);
+  color: var(--bg-color);
 }
+
 /* Portfolio */
 .portfolio-btn {
   font-weight: 500;
@@ -145,7 +157,8 @@ body {
 }
 
 .portfolio-btn:hover,
-.portfolio-btn:focus {
+.portfolio-btn:focus,
+.portfolio-btn.active {
   color: var(--color-title);
   background: var(--color-hover-focus);
 }
