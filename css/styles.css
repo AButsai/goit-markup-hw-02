@@ -17,6 +17,7 @@ body {
   background-color: var(--bg-color);
   font-size: 14px;
   letter-spacing: 0.03em;
+  transition: 0.5s;
 }
 
 .logo {
@@ -88,11 +89,13 @@ body {
 
 .hero-btn:focus,
 .hero-btn:hover {
-  box-shadow: 0 0 20px #2196f3;
+  background-color: #0c76cc;
+  color: var(--bg-color);
 }
 
 .peculiarities-title {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -121,6 +124,7 @@ body {
 .team-text {
   font-size: 16px;
   line-height: 1.18;
+  color: var(--color-text);
 }
 
 .footer {
@@ -132,7 +136,12 @@ body {
   color: var(--bg-color);
 }
 
+.address {
+  font-style: normal;
+}
+
 .address-link {
+  display: block;
   text-decoration: none;
   cursor: pointer;
   line-height: 1.71;
@@ -174,4 +183,10 @@ body {
   font-size: 16px;
   line-height: 1.87;
   color: var(--color-text);
+}
+
+.potfolio-link {
+  text-decoration: none;
+  color: var(--color);
+  cursor: pointer;
 }
